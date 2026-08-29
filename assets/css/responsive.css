@@ -1,0 +1,365 @@
+/*=================================================
+                RESPONSIVE DESIGN
+==================================================*/
+
+/*==================== LARGE DEVICES ====================*/
+
+@media (max-width:1200px){
+
+    .container{
+        width:95%;
+    }
+
+    .hero-content h1{
+        font-size:55px;
+    }
+
+}
+
+/*==================== TABLETS ====================*/
+
+@media (max-width:992px){
+
+    section{
+        padding:80px 0;
+    }
+
+    h1{
+        font-size:48px;
+    }
+
+    h2{
+        font-size:34px;
+    }
+
+    .hero{
+        height:90vh;
+    }
+
+    .hero-content{
+        width:90%;
+    }
+
+    .hero-content h1{
+        font-size:48px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .welcome-content,
+    .principal-content,
+    .glance-content,
+    .contact-wrapper{
+
+        grid-template-columns:1fr;
+        gap:50px;
+
+    }
+
+    .vision-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .facility-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/*==================== MOBILE MENU ====================*/
+
+@media (max-width:768px){
+
+    .top-bar{
+        display:none;
+    }
+
+    header{
+        top:0;
+    }
+
+    .navbar{
+
+        padding:18px 20px;
+        border-radius:0;
+
+    }
+
+    .menu-btn{
+        display:block;
+        z-index:1001;
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:80px;
+        right:-100%;
+
+        width:280px;
+        height:calc(100vh - 80px);
+
+        background:#fff;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        justify-content:flex-start;
+
+        padding:40px 25px;
+
+        gap:25px;
+
+        transition:.4s;
+
+        box-shadow:-10px 0 25px rgba(0,0,0,.12);
+
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .nav-links li a{
+        color:#222;
+    }
+
+    .logo img{
+        width:50px;
+    }
+
+    .logo-text h2{
+        font-size:18px;
+    }
+
+    .logo-text p{
+        font-size:12px;
+    }
+
+    .hero{
+
+        height:80vh;
+
+    }
+
+    .hero-content{
+
+        width:92%;
+
+    }
+
+    .hero-content h4{
+
+        font-size:16px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:38px;
+
+    }
+
+    .hero-content h3{
+
+        font-size:22px;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hero-controls{
+
+        display:none;
+
+    }
+
+    .vision-grid,
+    .why-grid,
+    .facility-grid,
+    .gallery-grid,
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-title{
+
+        margin-bottom:40px;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+    .welcome-image img,
+    .principal-image img,
+    .facility-card img{
+
+        width:100%;
+
+    }
+
+    .gallery-grid img{
+
+        height:220px;
+
+    }
+
+    .contact-map iframe{
+
+        height:300px;
+
+    }
+
+}
+
+/*==================== SMALL MOBILES ====================*/
+
+@media (max-width:480px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .hero{
+
+        height:75vh;
+
+    }
+
+    .hero-content h1{
+
+        font-size:30px;
+
+    }
+
+    .hero-content h3{
+
+        font-size:18px;
+
+    }
+
+    .hero-content p{
+
+        font-size:15px;
+
+    }
+
+    .btn{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+    .vision-card,
+    .why-card,
+    .facility-card{
+
+        padding:25px;
+
+    }
+
+    .stat-card h2{
+
+        font-size:42px;
+
+    }
+
+    .gallery-grid img{
+
+        height:180px;
+
+    }
+
+    .footer-bottom{
+
+        padding:20px 10px;
+
+    }
+
+}
+
+/*==================== EXTRA LARGE SCREENS ====================*/
+
+@media (min-width:1400px){
+
+    .container{
+
+        max-width:1320px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:72px;
+
+    }
+
+}
+@media (max-width: 900px) {
+
+  .addition-card {
+    grid-template-columns: 1fr;
+  }
+
+  .addition-image {
+    min-height: 350px;
+  }
+
+  .addition-content {
+    padding: 35px 25px;
+  }
+
+  .new-additions .section-title h2 {
+    font-size: 34px;
+  }
+
+}
