@@ -1986,3 +1986,169 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* =========================================================
+   NEW ADDITIONS - MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .new-additions {
+    padding: 55px 0;
+  }
+
+  .new-additions .section-title {
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .new-additions .section-title h5 {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+
+  .new-additions .section-title h2 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .new-additions .section-title p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Main card */
+  .addition-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    border-radius: 18px;
+  }
+
+  /* Image */
+  .addition-image {
+    width: 100%;
+    height: 240px;
+    min-height: 240px;
+  }
+
+  .addition-image img {
+    width: 100%;
+    height: 240px;
+    min-height: 240px;
+    object-fit: cover;
+  }
+
+  /* Construction badge */
+  .construction-badge {
+    top: 15px;
+    left: 15px;
+    padding: 8px 13px;
+    font-size: 13px;
+  }
+
+  /* Content */
+  .addition-content {
+    width: 100%;
+    padding: 28px 22px;
+  }
+
+  .addition-content .section-tag {
+    font-size: 13px;
+    padding: 7px 15px;
+    margin-bottom: 15px;
+  }
+
+  .addition-content h3 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .addition-content p {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 13px;
+  }
+
+  /* Features */
+  .addition-features {
+    gap: 14px;
+    margin: 18px 0;
+  }
+
+  .addition-features div {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .addition-features i {
+    font-size: 18px;
+    width: 23px;
+    flex-shrink: 0;
+  }
+
+  /* Information box */
+  .addition-note {
+    padding: 13px;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+    margin-top: 8px;
+  }
+
+  .addition-note i {
+    margin-right: 5px;
+  }
+
+  /* Remove desktop hover movement on touch devices */
+  .addition-card:hover {
+    transform: none;
+  }
+}
+
+
+/* Smaller phones */
+@media (max-width: 480px) {
+
+  .new-additions {
+    padding: 45px 0;
+  }
+
+  .new-additions .section-title h2 {
+    font-size: 25px;
+  }
+
+  .new-additions .section-title p {
+    font-size: 13px;
+  }
+
+  .addition-image,
+  .addition-image img {
+    height: 220px;
+    min-height: 220px;
+  }
+
+  .addition-content {
+    padding: 25px 18px;
+  }
+
+  .addition-content h3 {
+    font-size: 23px;
+  }
+
+  .addition-content p {
+    font-size: 13.5px;
+  }
+
+  .construction-badge {
+    font-size: 12px;
+    padding: 7px 11px;
+  }
+
+  .addition-features div {
+    font-size: 13.5px;
+  }
+
+  .addition-note {
+    font-size: 12.5px !important;
+  }
+}
