@@ -2152,3 +2152,78 @@ footer {
     font-size: 12.5px !important;
   }
 }
+/* =====================================================
+   NEW ADDITIONS - PHONE FIX
+   ===================================================== */
+
+@media screen and (max-width: 768px) {
+
+    .new-additions .addition-card {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    .new-additions .addition-image {
+        width: 100% !important;
+        height: 230px !important;
+        min-height: 0 !important;
+        flex: none !important;
+    }
+
+    .new-additions .addition-image img {
+        width: 100% !important;
+        height: 230px !important;
+        min-height: 0 !important;
+        object-fit: cover !important;
+    }
+
+    .new-additions .addition-content {
+        width: 100% !important;
+        min-width: 0 !important;
+        padding: 25px 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .new-additions .addition-content h3 {
+        font-size: 25px !important;
+        line-height: 1.3 !important;
+    }
+
+    .new-additions .addition-content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    .new-additions .addition-features {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .new-additions .addition-note {
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .new-additions .addition-image,
+    .new-additions .addition-image img {
+        height: 210px !important;
+    }
+
+    .new-additions .addition-content {
+        padding: 22px 18px !important;
+    }
+
+    .new-additions .addition-content h3 {
+        font-size: 23px !important;
+    }
+
+}
